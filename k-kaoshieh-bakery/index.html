@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!--main.css-->
+    <link rel="stylesheet" href="css/main.css">
+    <title>k Kaoshieh Bakery</title>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <div class="wrapper">
+        <!--nav bar-->
+        <nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="197">
+            <div class="container-fluid nav-container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" style="height:auto;" href="#">WebSiteName</a>
+                    <!--style="height:auto;" 1.model-box(margin border padding container) padding:25px;去支撐起來所以無內文(藍色區塊) 正確答案是-> navbar-brand內有設定height:20px; -->
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#section1" class="active">關於高仕</a></li>
+                        <li><a href="#section2">最新消息</a></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">產品介紹
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#section31">蛋糕 Cake</a></li>
+                                <li><a href="#section32">禮盒 Biscuits</a></li>
+                                <li><a href="#section33">彌月專區 Full Month</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#section4">訂購訊息/訂單</a></li>
+                        <li><a href="#section5">聯絡我們</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                        <li id="cart"><a href="#" class="fancyLogin"><span class="glyphicon glyphicon-log-in" id="tradeCount">0</span> 個商品</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--nav bar end-->
+
+        <!--marquee 跑馬燈-->
+        <div class="container-fluid marquee-container">
+            <h3>Collapsible Navbar</h3>
+            <p>In this example, the navigation bar is hidden on small screens and replaced by a button in the top right corner (try to re-size this window).
+            <p>Only when the button is clicked, the navigation bar will be displayed.</p>
+        </div>
+        <!--marquee 跑馬燈 end-->
+
+        <!--slider-->
+        <div class="container-fluid slider-container">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <li data-target="#myCarousel" data-slide-to="3"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+
+                    <div class="item active">
+                        <!--<img src="img_chania.jpg" alt="Chania" width="460" height="345">-->
+                        <img src="http://hwwmeserver.com/img_website_wp/wp-content/uploads/2015/11/Marvel.jpg" alt="New York" style="width:100%;">
+                        <div class="carousel-caption">
+                            <h3>Chania</h3>
+                            <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <!--<img src="img_chania2.jpg" alt="Chania" width="460" height="345">-->
+                        <img src="http://www.imgworlds.com/wp-content/uploads/2015/11/1500x734-spider-man-fixed.jpg" alt="Chicago" style="width:100%;">
+                        <div class="carousel-caption">
+                            <h3>Chania</h3>
+                            <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <!--<img src="img_flower.jpg" alt="Flower" width="460" height="345">-->
+                        <img src="http://hwwmeserver.com/img_website_wp/wp-content/uploads/2015/11/lostvalley1.jpg" alt="Los Angeles" style="width:100%;">
+
+                        <div class="carousel-caption">
+                            <h3>Flowers</h3>
+                            <p>Beautiful flowers in Kolymbari, Crete.</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <!--<img src="img_flower2.jpg" alt="Flower" width="460" height="345">-->
+                        <img src="http://www.imgworlds.com/wp-content/uploads/2015/11/1500X734_1-heros-fixed.jpg" alt="Flower" style="width: 100%;">
+                        <div class="carousel-caption">
+                            <h3>Flowers</h3>
+                            <p>Beautiful flowers in Kolymbari, Crete.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+        <!--slider end-->
+
+        <!--section 內文文章介紹-->
+        <div id="section1" class="container-fluid">
+            <div class="col-xs-12 col-md-6 col-lg-8 clearfix">
+                <div class="item clearfix">
+                    <h1>關於高仕 About KAOSHIEH</h1>
+                    <h5>臺北　高仕蛋糕</h5>
+                    <div class="images_logo"><img src="images/index/logo_history.jpg" alt="logo_history" style="width:100%"></div>
+                    <p>2007年初起由於網路團購盛行，高仕蛋糕更受到廣大網友青睞，紛紛於部落格中發表對高仕蛋糕的喜愛與推崇，使得高仕蛋糕成為網路團購熱門話題，也是人氣指數第一名，這樣的鼓勵與支持也讓高仕蛋糕燃起『好還要更好』的信心，以更新鮮、更自然、更健康的產品回饋廣大消費者。</p>
+                    <div class="section-more">
+                        <button type="button" class="btn btn-link section-button">詳細內文</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-4 clearfix">
+                <div class="item clearfix">
+                    <div class="images_logo"><img src="images/index/front_01.jpg" alt="logo_history" style="width:100%; height: 363px;"></div>
+                </div>
+            </div>
+            <!--</div>-->
+        </div>
+        <div id="section2" class="container-fluid">
+            <h1>最新消息 News</h1>
+            <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+            <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+        </div>
+        <div id="section3" class="container-fluid">
+            <h1>產品介紹 Product</h1>
+            <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+            <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+        </div>
+        <div id="section31" class="container-fluid">
+            <h1>蛋糕 Cake</h1>
+            <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+            <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+        </div>
+        <div id="section32" class="container-fluid">
+            <h1>禮盒 Biscuits</h1>
+            <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+            <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+        </div>
+        <div id="section33" class="container-fluid">
+            <h1>彌月專區 Full Month</h1>
+            <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+            <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+        </div>
+        <div id="section4" class="container-fluid">
+            <h1>訂購訊息 Message/訂單 Order</h1>
+            <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+            <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+        </div>
+        <div id="section5" class="container-fluid">
+            <h1>聯絡我們 Contact</h1>
+            <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+            <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+        </div>
+        <!--section end 1~4 內文文章介紹-->
+
+    </div><!--wrapper end-->
+</body>
+</html>
+<!-- Bootstrap3 jq js -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!--main.js-->
+<script src="js/main.js"></script>

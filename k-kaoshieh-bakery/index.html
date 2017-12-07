@@ -6,6 +6,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <!--main.css-->
     <link rel="stylesheet" href="css/main.css">
+    <!--media query-->
+    <link rel="stylesheet" href="css/media.css">
+
     <title>k Kaoshieh Bakery</title>
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -32,12 +35,13 @@
                             </a>
                             <ul class="dropdown-menu">
                                 <li><a href="#section31">蛋糕 Cake</a></li>
-                                <li><a href="#section32">禮盒 Biscuits</a></li>
-                                <li><a href="#section33">彌月專區 Full Month</a></li>
+                                <li><a href="#section32">彌月專區 Full Month</a></li>
+                                <li><a href="#section33">禮盒 Biscuits</a></li>
                             </ul>
                         </li>
                         <li><a href="#section4">訂購訊息/訂單</a></li>
                         <li><a href="#section5">聯絡我們</a></li>
+                        <!--<li><a href="#section6">footer</a></li>-->
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
@@ -46,14 +50,28 @@
                     </ul>
                 </div>
             </div>
+            <div class="blk" id="blk2"><!--social-icons-->
+                <div class="nomargin">
+                    <a href="https://www.facebook.com/bootsnipp" target="_blank"><i class="fa fa-facebook-square fa-3x social-fb"></i></a>
+                    <a href="https://twitter.com/bootsnipp" target="_blank"><i class="fa fa-twitter-square fa-3x social-tw"></i></a>
+                    <a href="https://plus.google.com/+Bootsnipp-page" target="_blank"><i class="fa fa-google-plus-square fa-3x social-gp"></i></a>
+                    <a href="mailto:wleejan982@hotmail.com" target="_blank"><i class="fa fa-envelope-square fa-3x social-em"></i></a>
+                    <!--id="social"-->
+                </div>
+            </div>
         </nav>
         <!--nav bar end-->
 
         <!--marquee 跑馬燈-->
-        <div class="container-fluid marquee-container">
-            <h3>Collapsible Navbar</h3>
-            <p>In this example, the navigation bar is hidden on small screens and replaced by a button in the top right corner (try to re-size this window).
-            <p>Only when the button is clicked, the navigation bar will be displayed.</p>
+        <div class="container-fluid col-xs-12 marquee-container">
+            <div class="row" style="padding: 0; margin: 0;">
+            <marquee class="marQuee col-xs-12">
+                <div class="doc-one">一號 臨時取貨或是隔日取貨、彌月蛋糕訂購，請直接電洽門市人員，將有專人為您服務。</div>
+                <div class="doc-one">二號 臨時取貨或是隔日取貨、彌月蛋糕訂購，請直接電洽門市人員，將有專人為您服務。</div>
+                <div class="doc-one">三號 臨時取貨或是隔日取貨、彌月蛋糕訂購，請直接電洽門市人員，將有專人為您服務。</div>
+                <div class="doc-one">四號 臨時取貨或是隔日取貨、彌月蛋糕訂購，請直接電洽門市人員，將有專人為您服務。</div>
+            </marquee>
+            </div>
         </div>
         <!--marquee 跑馬燈 end-->
 
@@ -72,7 +90,6 @@
                 <div class="carousel-inner" role="listbox">
 
                     <div class="item active">
-                        <!--<img src="img_chania.jpg" alt="Chania" width="460" height="345">-->
                         <img src="http://hwwmeserver.com/img_website_wp/wp-content/uploads/2015/11/Marvel.jpg" alt="New York" style="width:100%;">
                         <div class="carousel-caption">
                             <h3>Chania</h3>
@@ -81,7 +98,6 @@
                     </div>
 
                     <div class="item">
-                        <!--<img src="img_chania2.jpg" alt="Chania" width="460" height="345">-->
                         <img src="http://www.imgworlds.com/wp-content/uploads/2015/11/1500x734-spider-man-fixed.jpg" alt="Chicago" style="width:100%;">
                         <div class="carousel-caption">
                             <h3>Chania</h3>
@@ -90,7 +106,6 @@
                     </div>
 
                     <div class="item">
-                        <!--<img src="img_flower.jpg" alt="Flower" width="460" height="345">-->
                         <img src="http://hwwmeserver.com/img_website_wp/wp-content/uploads/2015/11/lostvalley1.jpg" alt="Los Angeles" style="width:100%;">
 
                         <div class="carousel-caption">
@@ -100,7 +115,6 @@
                     </div>
 
                     <div class="item">
-                        <!--<img src="img_flower2.jpg" alt="Flower" width="460" height="345">-->
                         <img src="http://www.imgworlds.com/wp-content/uploads/2015/11/1500X734_1-heros-fixed.jpg" alt="Flower" style="width: 100%;">
                         <div class="carousel-caption">
                             <h3>Flowers</h3>
@@ -175,34 +189,33 @@
             </div>
         </div>
         <div id="section3" class="container-fluid">
-            <h2 style="text-align: left;">產品介紹 Product</h2>
-            <!--<p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>-->
+            <h2 class="col-xs-12" style="text-align: left;">產品介紹 Product</h2>
             <div class="container-fluid">
                 <div class="row section-row">
                     <div class="col-xs-12 col-md-6">
-                        <div class="row">
-                            <div class="col-xs-12 col-md-6">
-                                <div class="item">
+                        <div class="row ">
+                            <div class="col-xs-12 col-md-6 row-pdt">
+                                <div class="item col-md-12 col-sm-6 col-xs-12">
                                     <img src="images/products/pdt5.5/pdt5.5-12.jpg" alt="紐約特濃芝士" class="item-img">
                                     <h4>紐約特濃芝士-5.5吋</h4>
                                 </div>
                             </div>
-                            <div class="col-xs-12 col-md-6">
-                                <div class="item">
+                            <div class="col-xs-12 col-md-6 row-pdt">
+                                <div class="item col-md-12 col-sm-6 col-xs-12">
                                     <img src="images/products/pdt7/pdt7-01.jpg" alt="草莓派 5~11月 (進口草莓) 7吋" class="item-img">
                                     <h4>草莓派(5~11月進口草莓)-7吋</h4>
                                 </div>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-xs-12 col-md-6">
-                                <div class="item">
+                            <div class="col-xs-12 col-md-6 row-pdt">
+                                <div class="item col-md-12 col-sm-6 col-xs-12">
                                     <img src="images/products/pdt8/pdt8-03.jpg" alt="藍莓優格重乳酪8吋" class="item-img">
                                     <h4>藍莓優格重乳酪-8吋</h4>
                                 </div>
                             </div>
-                            <div class="col-xs-12 col-md-6">
-                                <div class="item">
+                            <div class="col-xs-12 col-md-6 row-pdt">
+                                <div class="item col-md-12 col-sm-6 col-xs-12">
                                     <img src="images/products/square-cake/square-cake-01.jpg" alt="日式黑琳巧克力蛋糕" class="item-img">
                                     <h4>日式黑琳巧克力蛋糕-方形蛋糕</h4>
                                 </div>
@@ -211,28 +224,28 @@
                     </div>
                     <div class="col-xs-12 col-md-6">
                         <div class="row">
-                            <div class="col-xs-12 col-md-6">
-                                <div class="item">
+                            <div class="col-xs-12 col-md-6 row-pdt">
+                                <div class="item col-md-12 col-sm-6 col-xs-12">
                                     <img src="images/products/strip-cheese-cake/strip-cheese-cake-01.jpg" alt="法芙娜雪白起司條(禮盒)" class="item-img">
                                     <h4>法芙娜雪白起司條(禮盒)</h4>
                                 </div>
                             </div>
-                            <div class="col-xs-12 col-md-6">
-                                <div class="item">
+                            <div class="col-xs-12 col-md-6 row-pdt">
+                                <div class="item col-md-12 col-sm-6 col-xs-12">
                                     <img src="images/products/biscuits-dessert/biscuits-dessert-02.jpg" alt="日式蘭姆葡萄三明治+佛羅倫丁蜂蜜杏仁(餅乾組合)" class="item-img">
                                     <h4>蘭姆葡萄三明治+蜂蜜杏仁餅乾(10入)</h4>
                                 </div>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-xs-12 col-md-6">
-                                <div class="item">
+                            <div class="col-xs-12 col-md-6 row-pdt">
+                                <div class="item col-md-12 col-sm-6 col-xs-12">
                                     <img src="images/products/strip-cheese-cake/strip-cheese-cake-05.jpg" alt="奧地利藍莓起司條(單條)" class="item-img">
                                     <h4>奧地利藍莓起司條(單條)</h4>
                                 </div>
                             </div>
-                            <div class="col-xs-12 col-md-6">
-                                <div class="item">
+                            <div class="col-xs-12 col-md-6 row-pdt">
+                                <div class="item col-md-12 col-sm-6 col-xs-12">
                                     <img src="images/products/biscuits-dessert/biscuits-dessert-16.jpg" alt="黃金帕瑪森土鳳梨酥(12入)" class="item-img">
                                     <h4>黃金帕瑪森土鳳梨酥(12入)</h4>
                                 </div>
@@ -243,16 +256,20 @@
             </div>
         </div>
         <div id="section31" class="container-fluid">
-            <h2 style="text-align: left;">蛋糕 Cake</h2>
-            <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+            <h2 class="col-xs-12" style="text-align: left;">蛋糕 Cake</h2>
+            <p class="col-xs-12">高仕絕對不做普遍上一般市面蛋糕，我們研發團隊研究出健康零負擔的蛋糕，食材方面絕對當季現摘，無冷凍食品、無防腐劑，絕對保證讓你一試成主顧&nbsp;!</p>
             <div class="container-fluid">
-                <div class="row section-row">
+                <div class="row section-row col-xs-12">
                     <div class="col-xs-12">
                         <div class="row">
                             <div class="col-xs-12">
                                 <div class="item">
-                                    <img src="images/index/index_proA.jpg" alt="蛋糕" class="item-img">
-                                    <h4>8吋 蛋糕 8-Inch Cake</h4>
+                                    <img src="images/index/index_proA.jpg" alt="蛋糕" class="item-img-pdt">
+                                    <div class="text-name col-xs-12">
+                                        <a href="#" style="text-decoration:none;">
+                                            <h4>8吋 蛋糕 8-Inch Cake</h4>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -261,16 +278,27 @@
             </div>
         </div>
         <div id="section32" class="container-fluid">
-            <h2 style="text-align: left;">彌月專區 Full Month</h2>
-            <p>彌月蛋糕試吃活動進行中~請孕媽咪傳真媽媽手冊內容請註明 : 姓名、電話、收貨地址、寶貝預產期歡迎蒞臨各分店試吃。</p>
+            <h2 class="col-xs-12" style="text-align: left;">彌月專區 Full Month</h2>
+            <p class="col-xs-12">彌月蛋糕<b>『試吃活動』</b>進行中~&nbsp;請孕媽咪傳真媽媽手冊內容請註明:<b>姓名、電話、收貨地址、寶貝預產期</b>，&nbsp;歡迎蒞臨各分店試吃&nbsp;。</p>
             <div class="container-fluid">
-                <div class="row section-row">
+                <div class="row section-row col-xs-12">
                     <div class="col-xs-12">
                         <div class="row">
                             <div class="col-xs-12">
                                 <div class="item">
-                                    <img src="images/index/index_special_bg.jpg" alt="彌月專區" class="item-img">
-                                    <h4>彌月區 Full Month</h4>
+                                    <img src="images/index/index_special_bg.jpg" alt="彌月專區" class="item-img-pdt">
+                                    <div class="text-name ta-full">
+                                        <a href="#" style="text-decoration:none;">
+                                            <h4>彌月專區 Full Month</h4>
+                                        </a>
+                                    </div>
+                                    <div class="item-txt-pdt">
+                                        請於預產期前一個月或產後一個月內可索取5.5吋彌月蛋糕試吃<b>【半價優惠】</b>
+                                        <br>
+                                        如需外送 : 運費加160元，外縣市 (貨到付款) 需加30元代收費，
+                                        <br>
+                                        如有訂購滿5000元，退還半價優惠款項及運費。
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -279,16 +307,20 @@
             </div>
         </div>
         <div id="section33" class="container-fluid">
-            <h2 style="text-align: left;">禮盒 Biscuits</h2>
-            <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+            <h2 class="col-xs-12" style="text-align: left;">禮盒 Biscuits</h2>
+            <p class="col-xs-12">每塊餅乾都出自於師傅手工製作，為了幫消費者把關，不但食品上嚴格控管外，也替消費者調味比例控制，不膩好入口，自然、新鮮、健康品質，絕對不讓您失望!</p>
             <div class="container-fluid">
-                <div class="row section-row">
+                <div class="row section-row col-xs-12">
                     <div class="col-xs-12">
                         <div class="row">
                             <div class="col-xs-12">
                                 <div class="item">
-                                    <img src="images/index/index_proC.jpg" alt="禮盒、送禮區" class="item-img">
-                                    <h4>送禮 Biscuits </h4>
+                                    <img src="images/index/index_proC.jpg" alt="禮盒、送禮區" class="item-img-pdt">
+                                    <div class="text-name">
+                                        <a href="#" style="text-decoration:none;">
+                                            <h4>送禮 Biscuits</h4>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -296,81 +328,270 @@
                 </div>
             </div>
         </div>
-        <div id="section4" class="container-fluid">
-            <h2 style="text-align: left;">訂購訊息 Message/訂單 Order</h2>
-            <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+        <div id="section4" class="container-fluid col-xs-12">
+            <h2 class="col-xs-12" style="text-align: left;">訂購訊息 Message/訂單 Order</h2>
+            <p class="col-xs-12">可先去訂購流說明了解詳細狀況，以便購物過程中因未了解而出現問題，便於訂購商品，快去瞧瞧 GO~~~&nbsp;!</p>
             <div class="container-fluid section4-container-fluid">
-                <!--<div class="row">-->
+                <div class="col-xs-12" style="padding: 0; margin: 0;">
                     <ul class="grid ca-style">
-                        <li>
+                        <li style="padding: 0; margin: 0;">
                             <figure>
-                                <div class="col-xs-4 col-md-8">
+                                <div class="col-xs-4 col-md-12">
                                     <a href="#" class="thumbnail">
-                                        <img src="images/index/msgOrd-download.png" alt="訂購資訊" style="height: 180px;width: 100%;">
+                                        <img src="images/index/msgOrd-download.png" alt="訂購說明" style="height: 180px;width: 100%;">
                                     </a>
                                 </div>
                                 <figcaption>
-                                    <h3>訂購資訊</h3>
-                                    <span>first style</span>
-                                    <a href="#" class="btn_hover">button</a>
+                                    <h3>訂購說明</h3>
+                                    <span>Ordering instructions</span>
+                                    <a href="#" class="btn_hover" style="background-color: #94326b;">button</a>
                                 </figcaption>
                             </figure>
                         </li>
-                        <li>
+                        <li style="padding: 0; margin: 0;">
                             <figure>
-                                <div class="col-xs-4 col-md-8">
+                                <div class="col-xs-4 col-md-12">
                                     <a href="#" class="thumbnail">
                                         <img src="images/index/msgOrd-info.gif" alt="訂單下載" style="height: 180px;width: 100%;">
                                     </a>
                                 </div>
                                 <figcaption>
                                     <h3>訂單下載</h3>
-                                    <span>first style</span>
-                                    <a href="" class="btn_hover">button</a>
+                                    <div class="container-fluid">
+                                        <span>Order download</span>
+                                        <div class="row" style="padding: 0; margin: 0;">
+                                            <div class="col-xs-12 col-md-4" style="width: 33.333333%; height: 148px;">
+                                                <div class="row">
+                                                    <h3 style="text-align: center;">PDF File</h3>
+                                                    <a href="#" style="margin-left: 20px;">
+                                                        <p>全系列產品訂單 - PDF下載(1.4MB)</p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12 col-md-4" style="width: 33.333333%; height: 148px;">
+                                                <div class="row item">
+                                                    <h3 style="text-align: center;">JPG File</h3>
+                                                    <a href="#" style="margin-left: 20px;">
+                                                        <p>全系列產品訂單 - JPG下載(0.8MB)</p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12 col-md-4" style="width: 33.333333%; height: 148px;">
+                                                <div class="row item">
+                                                    <h3 style="text-align: center;">PDF File</h3>
+                                                    <a href="#" style="margin-left: 20px;">
+                                                        <p style="text-align: center;">2017聖誕獻禮產品訂單-PDF下載(1.68MB)</p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </figcaption>
                             </figure>
                         </li>
-                        <li>
+                        <li style="padding: 0; margin: 0;">
                             <figure>
-                                <div class="col-xs-4 col-md-8">
+                                <div class="col-xs-4 col-md-12">
                                     <a href="#" class="thumbnail">
                                         <img src="images/index/msgOrd-Q&A.png" alt="問與答" style="height: 180px;width: 100%;">
                                     </a>
                                 </div>
                                 <figcaption>
                                     <h3>問與答</h3>
-                                    <span>first style</span>
-                                    <a href="" class="btn_hover">button</a>
+                                    <span>FAQ</span>
+                                    <a href="#" class="btn_hover" style="background-color: #94326b;">button</a>
                                 </figcaption>
                             </figure>
                         </li>
                     </ul>
-                    <!--<div class="col-xs-6 col-md-4">-->
-                        <!--<a href="#" class="thumbnail">-->
-                            <!--<img src="../image/HAIAN.jpg" alt="問與答" style="height: 180px;width: 100%;">-->
-                        <!--</a>-->
-                    <!--</div>-->
-                    <!--<div class="col-xs-6 col-md-4">-->
-                        <!--<a href="#" class="thumbnail">-->
-                            <!--<img src="../image/HAIAN.jpg" alt="訂購資訊" style="height: 180px;width: 100%;">-->
-                        <!--</a>-->
-                    <!--</div>-->
-                    <!--<div class="col-xs-6 col-md-4">-->
-                        <!--<a href="#" class="thumbnail">-->
-                            <!--<img src="../image/HAIAN.jpg" alt="訂單下載" style="height: 180px;width: 100%;">-->
-                        <!--</a>-->
-                    <!--</div>-->
-                <!--</div>-->
+                </div>
+                <div class="container-fluid privacy-statement col-xs-12">
+                    <div class="row" style="padding: 0; margin: 0;">
+                        <p style="font-size: 30px;">隱私權聲明</p>
+                        <div class="privacy-statement-txt col-xs-12">
+                            我們以商業上合理的最大努力來維護您分享給我們的資料安全與隱私。我們不會在未經過您同意前將您的個人資料出售或給其他市場行銷者。<br>
+                            但是，有時候我們希望獲得您的許可寄送新品消息、商品預覽或關於我們所提供的個人化服務的相關資訊等。只有於您選擇取得這些服務時，<br>
+                            您才會收到這些服務的提供與資訊。我們也會詢問您對於如何提升我們商品與系統的想法意見。<br>
+                            為了了解與提升服務，您的資料將會被安全地分享給代表我方的服務公司或安全地保存在非蒐集的國家中。<br>
+                            您可以透過聯繫&nbsp;<b>kscake426@yahoo.com.tw</b>&nbsp;選擇加入這些聯繫類型。<br>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div id="section5" class="container-fluid">
-            <h2 style="text-align: left;">聯絡我們 Contact</h2>
-            <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-
+            <div class="container-fluid section5-container-fluid">
+                <div class="row" style="margin: 0;">
+                    <div class="col-xs-12 col-md-4"  style="height: 660px;">
+                        <div class="item sidebar col-xs-12">
+                            <div class="container-fluid">
+                                <div class="row row-cakeShop" style="padding: 0; margin: 0;">
+                                    <h1>高仕蛋糕店</h1>
+                                    <span>Kaoshieh Cake Shop</span>
+                                    <h1>If you have any <br>questions, please<br> contact me.</h1>
+                                    <div class="Icon">
+                                        <div class="icon-display">
+                                            <i class="fa fa-arrow-right fa-4x" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="icon-closed">
+                                            <i class="fa fa-arrow-left fa-4x" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-8">
+                        <div class="item sidebar">
+                            <div class="row" style="padding: 0; margin: 0;">
+                                <div class="title-contact col-xs-12" style="text-align: center;">
+                                    <h2>聯絡我們 Contact Us</h2>
+                                </div>
+                                <form method="post" role="form">
+                                    <div class="controls col-xs-12">
+                                        <div class="form-group col-xs-12 col-md-6">
+                                            <p class="required">全名 / Full Name</p>
+                                                <input type="text" name="name" class="form-input-text form-control"  required="required">
+                                        </div>
+                                        <div class="form-group col-xs-12 col-md-6">
+                                            <p class="required">郵件 / Email</p>
+                                            <input type="email" name="email" class="form-input-text form-control"  required="required">
+                                        </div>
+                                        <div class="form-group col-xs-12 col-md-6">
+                                            <p>公司 / Company</p>
+                                            <input type="text" name="name" class="form-input-text form-control"  required="required">
+                                        </div>
+                                        <div class="form-group col-xs-12 col-md-6">
+                                            <p class="required">電話 / Phone</p>
+                                            <input type="text" name="name" class="form-input-text form-control"  required="required">
+                                        </div>
+                                        <div class="form-group col-xs-12 col-md-4">
+                                            <p>請選擇縣市 / City</p>
+                                            <input type="text" name="name" class="form-input-text form-control"  required="required">
+                                        </div>
+                                        <div class="form-group col-xs-12 col-md-4">
+                                            <p>請選擇鄉鎮市區 / Area</p>
+                                            <input type="text" name="name" class="form-input-text form-control"  required="required">
+                                        </div>
+                                        <div class="form-group col-xs-12 col-md-4">
+                                            <p>道路、街或村里名/Road、Street ...</p>
+                                            <input type="text" name="name" class="form-input-text form-control"  required="required">
+                                        </div>
+                                        <div class="form-group col-xs-12">
+                                            <p>地址 / Address</p>
+                                            <input type="text" name="name" class="form-input-text form-control"  required="required">
+                                        </div>
+                                        <div class="form-group col-xs-12">
+                                            <p class="required">留言 / Message</p>
+                                            <textarea name="message" class="form-input-text form-control" rows="4" required="required"></textarea>
+                                        </div>
+                                        <div class="form-group col-xs-12">
+                                            <p class="required">驗證碼 / Verification code</p>
+                                            <input type="text" name="name" class="form-input-text form-control"  required="required">
+                                        </div>
+                                        <div class="container-fluid col-xs-12">
+                                            <div class="row">
+                                                <div class="clear-button bottom-margin col-xs-6" style="text-align: right;">
+                                                    <button type="submit" class="btn btn-clear clear-msg">CLEAR</button>
+                                                </div>
+                                                <div class="send-button bottom-margin  col-xs-6" style="text-align: left;">
+                                                    <button type="submit" class="btn btn-send send-msg">SEND MESSAGE</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div><!--row-->
+                        </div><!--item sidebar-->
+                    </div><!--col-xs-12 col-md-8-->
+                </div>
+            </div>
         </div>
-        <!--section end 1~4 內文文章介紹-->
 
+        <!--section end 1~4 內文文章介紹-->
     </div><!--wrapper end-->
+
+    <footer class="container-fluid text-center bg-6">
+        <div class="container">
+            <div class="row"><!-- row -->
+<!--1-->
+                <div class="col-lg-4 col-md-12"><!-- widgets column left -->
+                    <ul class="list-unstyled clear-margins"><!-- widgets -->
+                        <li class="widget-container widget_nav_menu"><!-- widgets list -->
+                            <h1 class="title-widget">關於高仕</h1>
+                            <div class="images-aboutShop">
+                                <img src="images/index/front_02.jpg" alt="" style="width: 100%; height: 250px;">
+                            </div>
+                            <ul>
+                                高仕食品於2007年11月擴大營業更名為『高仕蛋糕股份有限公司』。並且於2012年1月在台北市愛國東路的婚紗街設立旗艦店，
+                                蘋果日報亦曾大篇幅報導，旗艦店內部寬廣舒適，並且增設彌月禮盒洽談VIP專區，提供準媽媽免費試吃各式產品，滿意再訂購。
+                                至於口味研發部分不斷精進，希望能給消費者更好的服務。
+                            </ul>
+                        </li>
+                    </ul>
+                    <!--<div class="blk" id="blk2">&lt;!&ndash;social-icons&ndash;&gt;-->
+                        <!--<ul class="nomargin">-->
+                            <!--<a href="https://www.facebook.com/bootsnipp"><i class="fa fa-facebook-square fa-3x social-fb"></i></a>-->
+                            <!--<a href="https://twitter.com/bootsnipp"><i class="fa fa-twitter-square fa-3x social-tw"></i></a>-->
+                            <!--<a href="https://plus.google.com/+Bootsnipp-page"><i class="fa fa-google-plus-square fa-3x social-gp"></i></a>-->
+                            <!--<a href="mailto:bootsnipp@gmail.com"><i class="fa fa-envelope-square fa-3x social-em"></i></a>-->
+                            <!--&lt;!&ndash;id="social"&ndash;&gt;-->
+                        <!--</ul>-->
+                    <!--</div>-->
+                </div><!-- widgets column left end -->
+<!--2-->
+                <div class="col-lg-4 col-md-12"><!-- widgets column left -->
+                    <h1 class="title-widget">自由廣場旗艦店</h1>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1807.4968575339906!2d121.51815400638685!3d25.03428735515903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a99e8e15d269%3A0x658b59c61a6192a3!2z6auY5LuV6JuL57OVIOS4reato-aXl-iJpuW6lw!5e0!3m2!1szh-TW!2stw!4v1512361854263" width="100%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    <ul class="list-unstyled clear-margins"><!-- widgets -->
+                        <li class="widget-container widget_nav_menu"><!-- widgets list -->
+
+                            <ul>
+                                <li><div class="cominfoadd"><b>地址:</b>台北市100中正區愛國東路56~58號<br>No.56~58, Aiguo E.Rd., Zhongzheng Dist.,Taipei City 100, Taiwan</div></li>
+                                <li class="cominfofax"><i class="fa fa-angle-double-right"></i><b>FAX : </b>02-2321-1141</li>
+                                <li>
+                                    <div class="cominfomail"><b>E-mail :</b>
+                                        <a href="mailto:kscake5658@yahoo.com.tw?subject=詢問信來自 //www.kaoshieh.com.tw/">kscake5658@yahoo.com.tw</a>
+                                    </div>
+                                </li>
+                                <li><b>門市營業時間 :</b><br>上午08:00am~晚上09:00pm</li>
+                                <li><div class="cominfotel"><b>TEL :</b> <a href="tel:02-2321-4300">02-2321-4300</a>&nbsp;代表號</div></li>
+                            </ul>
+
+                        </li>
+                    </ul>
+                </div><!-- widgets column left end -->
+<!--3-->
+                <div class="col-lg-4 col-md-12"><!-- widgets column left -->
+                    <h1 class="title-widget">延壽創始店</h1>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.3487968487075!2d121.55413091438517!3d25.056164543557905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442abec5d45fbd9%3A0xedc9c7bf2ac4194d!2zMTA15Y-w5YyX5biC5p2-5bGx5Y2A5bu25aO96KGXNDI26Jmf!5e0!3m2!1szh-TW!2stw!4v1512362558528" width="100%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    <ul class="list-unstyled clear-margins"><!-- widgets -->
+                        <li class="widget-container widget_nav_menu"><!-- widgets list -->
+
+                            <ul>
+                                <li><div class="cominfoadd"><b>地址:</b>台05松山區延壽街426號<br>No.426, Yanshou St., Songshan Dist., Taipei City 105, Taiwan</div></li>
+                                <li class="cominfofax"><i class="fa fa-angle-double-right"></i><b>FAX :</b> 02-2747-5581</li>
+                                <li><div class="cominfomail"><b>E-mail :</b> <a href="mailto:kscake426@yahoo.com.tw">kscake426@yahoo.com.tw</a></div></li>
+                                <li><b>門市營業時間 : </b><br>上午08:00am~晚上09:45pm</li>
+                                <li><div class="cominfotel"><b>TEL :</b> <a href="tel:02-2747-5580">02-2747-5580</a>&nbsp;代表號</div></li>
+                            </ul>
+
+                        </li>
+                    </ul>
+                </div><!-- widgets column left end -->
+
+            </div>
+        </div>
+
+        <!--bottom @copyright 2017-->
+        <a href="#" title="Decoration Gallery">
+            <span class="glyphicon glyphicon-chevron-up" style="font-size: 30px;"></span>
+        </a>
+        <div class="container-fluid">
+            <a href="#" target="_blank">首頁</a>created by Georgia.<br>高仕蛋糕    隱私權政策  高仕食品企業有限公司Copyright &copy;2017 Kaoshieh All Rights Reserved
+            <a href="#" target="_blank"></a>
+        </div>
+    </footer>
 </body>
 </html>
 <!-- Bootstrap3 jq js -->
@@ -378,3 +599,5 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <!--main.js-->
 <script src="js/main.js"></script>
+<!--Font Awesome CDN embed code-->
+<script src="https://use.fontawesome.com/abeb7abf3e.js"></script>

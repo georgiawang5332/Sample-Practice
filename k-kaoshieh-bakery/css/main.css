@@ -3,6 +3,7 @@
     padding: 0;
     list-style: none;
     text-decoration: none;
+    box-sizing: border-box;
     /*outline: 1px solid #BB0000;*/
 }
 /*訂購訊息vs訂單下載 #1*/
@@ -15,7 +16,7 @@ body {
     position: relative;
 }
 .wrapper{
-    background-color: #000;
+    /*background-color: #000;*/
 }
 
 /*nav bar*/
@@ -38,7 +39,7 @@ body {
     transition: all .5s ease-in-out;
 }
 .affix-top a {
-    padding: 25px !important;
+    padding: 15px !important;
 }
 .container-fluid{
     padding: 0;
@@ -53,30 +54,38 @@ body {
 
 /*news marquee跑馬燈*/
 .marquee-container{
-    padding: 0;
+    margin-bottom: -0.2%;
 }
+.marQuee{
+    overflow:hidden;
+    width:100%;
+    background-color:pink;
+}
+.doc-one{
+    display:inline-block;
+    border:1px solid;
+    width:100%;
+}
+
 /*news marquee跑馬燈 end*/
 
 /*slider*/
-.slider-container{
-    padding: 0;
-}
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
     width: 100%;
-    margin: auto;
 }
 /*slider end*/
 
 /*section 內文文章介紹*/
-#section1 {padding-top:50px;height:600px;color: #fff; background-color: #1E88E5;}
-#section2 {padding-top:50px;height:600px;color: #fff; background-color: #673ab7;}
-#section3 {padding-top:50px;height:600px;color: #fff; background-color: #ff9800;}
-#section4 {padding-top:50px;height:600px;color: #fff; background-color: #aaa;}
-#section5 {padding-top:50px;height:600px;color: #fff; background-color: #ccafff;}
-#section31 {padding-top:50px;height:600px;color: #fff; background-color: #00bcd4;}
-#section32 {padding-top:50px;height:600px;color: #fff; background-color: #cc23;}
-#section33 {padding-top:50px;height:600px;color: #fff; background-color: #009688;}
+#section1 {padding-top:0;min-height:100vh;color: #fff; background-color: #ff0019;}
+#section2 {padding-top:0;min-height:100vh;color: #fff; background-color: #ffa00f;}
+#section3 {padding-top:0;min-height:100vh;color: #fff; background-color: #feff12;}
+#section31 {padding-top:0;min-height:100vh;color: #fff; background-color: #32ff0a;}
+#section32 {padding-top:0;min-height:100vh;color: #fff; background-color: #1cdaff;}
+#section33 {padding-top:0;min-height:100vh;color: #fff; background-color: #2b39ff;}
+#section4 {padding-top:0;min-height:100vh;color: #fff; background-color: #f223ff;}
+#section5 {padding-top:0;min-height:100vh;color: #fff; background-color: #814f15;}
+footer {padding-top:10px;min-height:100vh;color: #fff; background-color: #376b6e;}
 
 .section-row{
     margin: 0;
@@ -103,8 +112,6 @@ body {
 }
 .item-section1_two>.images_shop>img{
     width:100px;
-    /*height: 100px;*/
-    /*border-radius: 50%;*/
 }
 
 /*row-section2*/
@@ -114,13 +121,41 @@ body {
 /*row-section3*/
 .item-img{
     width: 100%;
-    height: 200px;
+}
+.item-img-pdt{
+    width: 100%;
+    height: 506px;
+}
+/*row-section(31、32、33)*/
+.text-name h4{
+    position:relative;
+    z-index:2;
+    margin-top:-250px;
+    font-size: 60px;
+    color: #91848e;
+    text-align: right;
+}
+/*row-section3-1(31)*/
+#section31 .text-name h4{
+
+}
+/*row-section3-2(32)*/
+#section32 .text-name h4{
+    text-align: left;
+}
+.item-txt-pdt{
+    text-align: left;
+    color: #91848e;
+    font-size: 20px;
+}
+/*row-section3-3(33)*/
+#section33 .text-name h4{
+
 }
 
-/*row-section3-1(31)*/
-/*row-section3-2(32)*/
 /*row-section4*/
-/*訂購訊息vs訂單下載 #2*/
+
+/*第一層 訂購訊息vs訂單下載 #2*/
 .section4-container-fluid{
     padding-top: 50px;
 }
@@ -139,14 +174,11 @@ body {
 .grid li {
     display: inline-block;
     width: 440px;
-    /*height: 200px;*/
     margin: 0;
-    /*padding: 20px;*/
     text-align: left;
     position: relative;
 }
 .grid figure {
-    /*margin: 0;*/
     position: relative;
 }
 .grid figure > div {
@@ -156,7 +188,7 @@ body {
     position: relative;
 }
 
-/* 第二隱藏版子 */
+/* 第二層 hover隱藏 */
 .grid figcaption {
     position: absolute;
     top: 0;
@@ -244,14 +276,14 @@ body {
     right: 20px;
 }
 .btn_hover:hover {
-    background: #3fc7e8;
+    background-color: #94326b;
     -webkit-transition: all 0.2s ease-in;
     -moz-transition: all 0.2s ease-in;
     -o-transition: all 0.2s ease-in;
 }
 
 /* make responsive */
-@media screen and (max-width: 31.5em) {
+@media only screen and (max-width: 31.5em) {
     .grid {
         padding: 10px 10px 50px 10px;
     }
@@ -261,5 +293,50 @@ body {
     }
 }
 
+/*第三 隱私權聲明 文字設計*/
+.privacy-statement{
+    text-align: center;
+    font-size: 16px;
+}
+
 /*row-section5*/
-/*section end 內文文章介紹*/
+.row-cakeShop{
+    background-image: url(../images/index/cakeShop.png);
+    width: 100%;
+    min-height: 660px;
+}
+/*<div class="col-xs-12 col-md-4">*/
+/*<div class="col-xs-12 col-md-8">*/
+.required:after {
+    content: " *必填欄位";
+    color: red;
+}
+/*section footer end 內文文章介紹*/
+
+/*footer內右邊側邊欄位 (關鍵字)float menu*/
+.blk {
+    position: fixed;  /*固定在網頁上不隨卷軸移動，若要隨卷軸移動用absolute 固定位置fixed*/
+    width: 21%;
+    right: -20%;  /*設-100置水平位置，依所放的內容多寡需要自行手動調整*/
+    transition: 400ms;
+    top: 37%;  /*設置垂直位置*/
+    z-index: 100;
+    background-color: #ffc9d3;
+    border-radius: 15px 0 0 15px;
+}
+.blk:hover{  /*當滑鼠移至此區塊時，伸縮區塊*/
+    width: 5%;
+    right: 0;
+    z-index: 100;
+}
+.blk3 {
+    position: fixed;
+    margin-top: 10px;
+    transition: 400ms;
+}
+/*floating menu right*/
+.nomargin{
+    background-color: #ffc9d3;
+    width: 20%;
+    border-radius: 15px 0 0 15px;
+}

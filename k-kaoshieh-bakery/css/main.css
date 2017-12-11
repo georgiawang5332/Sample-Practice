@@ -4,7 +4,11 @@
     list-style: none;
     text-decoration: none;
     box-sizing: border-box;
+    color: #fff;
     /*outline: 1px solid #BB0000;*/
+}
+h2{
+    color: #fff;
 }
 /*訂購訊息vs訂單下載 #1*/
 *, *:after, *:before {
@@ -15,21 +19,19 @@
 body {
     position: relative;
 }
-.wrapper{
-    /*background-color: #000;*/
-}
-
 /*nav bar*/
 .navbar{
     margin-bottom:0;
+    background-color: #8a0151;
+    border-radius: 0;
 }
 .affix{
     top: 0;
     width: 100%;
     -webkit-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
-    background-color: #F44336;
-    border-color: #F44336;
+    background-color: #8a0151;
+    border-color: #8a0151;
     z-index: 99;
 }
 .affix a {
@@ -41,15 +43,15 @@ body {
 .affix-top a {
     padding: 15px !important;
 }
-.container-fluid{
-    padding: 0;
-}
+/*.container-fluid{*/
+    /*padding: 0;*/
+/*}*/
 .affix + .container-fluid {
     padding-top: 95px;
 }
-.dropdown-menu > li > a:hover{
-    background-color: #4b525b;
-}
+/*.dropdown-menu > li > a:hover{*/
+    /*background-color: #4b525b;*/
+/*}*/
 /*nav bar end*/
 
 /*news marquee跑馬燈*/
@@ -59,11 +61,10 @@ body {
 .marQuee{
     overflow:hidden;
     width:100%;
-    background-color:pink;
+    background-image: url("https://static.pexels.com/photos/1946/purple-abstract-haze-blur.jpg");
 }
 .doc-one{
     display:inline-block;
-    border:1px solid;
     width:100%;
 }
 
@@ -77,18 +78,74 @@ body {
 /*slider end*/
 
 /*section 內文文章介紹*/
-#section1 {padding-top:0;min-height:100vh;color: #fff; background-color: #ff0019;}
-#section2 {padding-top:0;min-height:100vh;color: #fff; background-color: #ffa00f;}
-#section3 {padding-top:0;min-height:100vh;color: #fff; background-color: #feff12;}
-#section31 {padding-top:0;min-height:100vh;color: #fff; background-color: #32ff0a;}
-#section32 {padding-top:0;min-height:100vh;color: #fff; background-color: #1cdaff;}
-#section33 {padding-top:0;min-height:100vh;color: #fff; background-color: #2b39ff;}
-#section4 {padding-top:0;min-height:100vh;color: #fff; background-color: #f223ff;}
-#section5 {padding-top:0;min-height:100vh;color: #fff; background-color: #814f15;}
-footer {padding-top:10px;min-height:100vh;color: #fff; background-color: #376b6e;}
+#section1 {padding-top:0;min-height:100vh;color: #000; background-color: #fff;}
+.parallax-one {
+    /* The image used */
+    background-image: url("https://static.pexels.com/photos/1946/purple-abstract-haze-blur.jpg");
+    /* Set a specific height */
+    min-height: 500px;
 
-.section-row{
-    margin: 0;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#section2 {padding-top:0;min-height:100vh;color: #fff; background-color: #000;}
+#section3 {padding-top:0;min-height:100vh;color: #000; background-color: #fff;}
+.parallax-three {
+    /* The image used */
+    background-image: url("https://static.pexels.com/photos/1946/purple-abstract-haze-blur.jpg");
+    /* Set a specific height */
+    min-height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#section31 {padding-top:0;min-height:100vh;color: #fff; background-color: #000;}
+#section32 {padding-top:0;min-height:100vh;color: #000; background-color: #fff;}
+.parallax-Thirty-two {
+    /* The image used */
+    background-image: url("https://static.pexels.com/photos/1946/purple-abstract-haze-blur.jpg");
+    /* Set a specific height */
+    min-height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#section33 {padding-top:0;min-height:100vh;color: #fff; background-color: #000;}
+#section4 {padding-top:0;min-height:100vh;color: #000; background-color: #fff;}
+.parallax-four {
+    /* The image used */
+    background-image: url("https://static.pexels.com/photos/1946/purple-abstract-haze-blur.jpg");
+    /* Set a specific height */
+    min-height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#section5 {padding-top:0;min-height:100vh;color: #fff; background-color: #000;}
+footer {padding-top:10px;min-height:100vh;color: #000; background-color: #fff;}
+.parallax-footer {
+    /* The image used */
+    background-image: url("https://static.pexels.com/photos/1946/purple-abstract-haze-blur.jpg");
+    /* Set a specific height */
+    min-height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /*row-section1*/
@@ -100,23 +157,19 @@ footer {padding-top:10px;min-height:100vh;color: #fff; background-color: #376b6e
     height: 80px;
 }
 .section-button{
-    width:15%;
+    width:40%;
     background-color: #8a0151;
     font-size: 16px;
-    padding: 8px;
-    color: #fff;
 }
 .section-button:hover{
     background-color: #94326b;
-    color: #fff;
 }
 .item-section1_two>.images_shop>img{
     width:100px;
 }
-
 /*row-section2*/
-.section2-news{
-    margin: 0;
+#section2 .caption p{
+    color: #000;
 }
 /*row-section3*/
 .item-img{
@@ -132,7 +185,7 @@ footer {padding-top:10px;min-height:100vh;color: #fff; background-color: #376b6e
     z-index:2;
     margin-top:-250px;
     font-size: 60px;
-    color: #91848e;
+    color: #1d2219;
     text-align: right;
 }
 /*row-section3-1(31)*/
@@ -145,19 +198,21 @@ footer {padding-top:10px;min-height:100vh;color: #fff; background-color: #376b6e
 }
 .item-txt-pdt{
     text-align: left;
-    color: #91848e;
+    color: #1d2219;
     font-size: 20px;
 }
-/*row-section3-3(33)*/
-#section33 .text-name h4{
-
+.item-txt-pdt p {
+    color: #000;
 }
-
+.item-txt-pdt b{
+    color: #000;
+}
+/*row-section3-3(33)*/
 /*row-section4*/
 
 /*第一層 訂購訊息vs訂單下載 #2*/
 .section4-container-fluid{
-    padding-top: 50px;
+    /*padding-top: 50px;*/
 }
 @media screen and (max-width: 25em) {
     .np-icon span {
@@ -165,21 +220,19 @@ footer {padding-top:10px;min-height:100vh;color: #fff; background-color: #376b6e
     }
 }
 .grid {
-     /*padding: 20px 20px 100px 20px;*/
-     /*max-width: 1200px;*/
      margin: 0 auto;
      list-style: none;
      text-align: center;
  }
 .grid li {
     display: inline-block;
-    width: 440px;
-    margin: 0;
+    width: 400px;
+    /*margin: 0;*/
     text-align: left;
     position: relative;
 }
 .grid figure {
-    position: relative;
+    /*position: relative;*/
 }
 .grid figure > div {
     width: 100%;
@@ -191,10 +244,10 @@ footer {padding-top:10px;min-height:100vh;color: #fff; background-color: #376b6e
 /* 第二層 hover隱藏 */
 .grid figcaption {
     position: absolute;
-    top: 0;
-    left: 0;
-    padding: 20px;
-    background: rebeccapurple;
+    /*top: 0;*/
+    /*left: 0;*/
+    padding: 9px;
+    background: #ffd7c6;
     color: #ed4e6e;
 }
 .grid figcaption h3 {
@@ -207,10 +260,11 @@ footer {padding-top:10px;min-height:100vh;color: #fff; background-color: #376b6e
 .grid figcaption a {
     text-align: center;
     padding: 5px 10px;
-    border-radius: 2px;
-    display: inline-block;
-    background: #31a7c4;
+    /*border-radius: 2px;*/
+    /*display: inline-block;*/
+    /*background: #31a7c4;*/
     color: #fff;
+    background-color: #94326b;
 }
 
 /* Caption animation */
@@ -270,6 +324,7 @@ footer {padding-top:10px;min-height:100vh;color: #fff; background-color: #376b6e
     -moz-transition: -moz-transform 0.4s, opacity 0.1s;
     transition: transform 0.4s, opacity 0.1s;
 }
+/*訂購訊息(訂單)button*/
 .ca-style figcaption a {
     position: absolute;
     bottom: 20px;
@@ -300,16 +355,42 @@ footer {padding-top:10px;min-height:100vh;color: #fff; background-color: #376b6e
 }
 
 /*row-section5*/
+.pandm{
+    padding: 0;
+    margin: 0;
+}
 .row-cakeShop{
     background-image: url(../images/index/cakeShop.png);
     width: 100%;
     min-height: 660px;
 }
 /*<div class="col-xs-12 col-md-4">*/
+.btn-form{
+    padding: 0.8% 0 0 0;
+}
+.btn-sub{
+    width:93%;
+    background-color: #8a0151;
+    font-size: 16px;
+    color: #fff;
+}
+.btn-sub:hover{
+    background-color: #94326b;
+    color: #fff;
+}
 /*<div class="col-xs-12 col-md-8">*/
 .required:after {
     content: " *必填欄位";
     color: red;
+}
+.bottom-margin{
+    text-align: center;
+}
+.bottom-margin-clear{
+
+ }
+.bottom-margin-send{
+
 }
 /*section footer end 內文文章介紹*/
 
@@ -321,7 +402,7 @@ footer {padding-top:10px;min-height:100vh;color: #fff; background-color: #376b6e
     transition: 400ms;
     top: 37%;  /*設置垂直位置*/
     z-index: 100;
-    background-color: #ffc9d3;
+    background-color: #8a0151;
     border-radius: 15px 0 0 15px;
 }
 .blk:hover{  /*當滑鼠移至此區塊時，伸縮區塊*/
@@ -336,7 +417,7 @@ footer {padding-top:10px;min-height:100vh;color: #fff; background-color: #376b6e
 }
 /*floating menu right*/
 .nomargin{
-    background-color: #ffc9d3;
+    background-color: #8a0151;
     width: 20%;
     border-radius: 15px 0 0 15px;
 }

@@ -43,15 +43,15 @@ body {
 .affix-top a {
     padding: 15px !important;
 }
-/*.container-fluid{*/
-    /*padding: 0;*/
-/*}*/
+.container-fluid{
+    padding: 0;
+}
 .affix + .container-fluid {
     padding-top: 95px;
 }
-/*.dropdown-menu > li > a:hover{*/
-    /*background-color: #4b525b;*/
-/*}*/
+.dropdown-menu > li > a:hover{
+    background-color: #4b525b;
+}
 /*nav bar end*/
 
 /*news marquee跑馬燈*/
@@ -211,9 +211,6 @@ footer {padding-top:10px;min-height:100vh;color: #000; background-color: #fff;}
 /*row-section4*/
 
 /*第一層 訂購訊息vs訂單下載 #2*/
-.section4-container-fluid{
-    /*padding-top: 50px;*/
-}
 @media screen and (max-width: 25em) {
     .np-icon span {
         display: none;
@@ -227,12 +224,12 @@ footer {padding-top:10px;min-height:100vh;color: #000; background-color: #fff;}
 .grid li {
     display: inline-block;
     width: 400px;
-    /*margin: 0;*/
+    margin: 0;
     text-align: left;
     position: relative;
 }
 .grid figure {
-    /*position: relative;*/
+    position: relative;
 }
 .grid figure > div {
     width: 100%;
@@ -316,7 +313,7 @@ footer {padding-top:10px;min-height:100vh;color: #000; background-color: #fff;}
     transition: transform 0.4s, opacity 0.1s 0.3s;
 }
 .ca-style figure:hover figcaption{
-    opacity: 1;
+    /*opacity: 1;*/
     -webkit-transform: rotateY(0deg);
     -moz-transform: rotateY(0deg);
     transform: rotateY(0deg);

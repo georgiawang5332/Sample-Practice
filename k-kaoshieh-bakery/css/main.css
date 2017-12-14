@@ -46,8 +46,9 @@ body {
 .container-fluid{
     padding: 0;
 }
+/*navbar 與跑馬燈的之間高*/
 .affix + .container-fluid {
-    padding-top: 95px;
+    padding-top: 50px;
 }
 .dropdown-menu > li > a:hover{
     background-color: #4b525b;

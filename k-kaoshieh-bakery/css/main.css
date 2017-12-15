@@ -4,11 +4,7 @@
     list-style: none;
     text-decoration: none;
     box-sizing: border-box;
-    color: #fff;
     /*outline: 1px solid #BB0000;*/
-}
-h2{
-    color: #fff;
 }
 /*訂購訊息vs訂單下載 #1*/
 *, *:after, *:before {
@@ -19,19 +15,21 @@ h2{
 body {
     position: relative;
 }
+.wrapper{
+    /*background-color: #000;*/
+}
+
 /*nav bar*/
 .navbar{
     margin-bottom:0;
-    background-color: #8a0151;
-    border-radius: 0;
 }
 .affix{
     top: 0;
     width: 100%;
     -webkit-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
-    background-color: #8a0151;
-    border-color: #8a0151;
+    background-color: #F44336;
+    border-color: #F44336;
     z-index: 99;
 }
 .affix a {
@@ -46,13 +44,22 @@ body {
 .container-fluid{
     padding: 0;
 }
+<<<<<<< HEAD
 /*navbar 與跑馬燈的之間高*/
+=======
+>>>>>>> parent of 02f3fbc... The size of the tablet series is not adjusted, only for mobile phone users and computer users to watch, use google to browse the page.
 .affix + .container-fluid {
     padding-top: 50px;
 }
 .dropdown-menu > li > a:hover{
     background-color: #4b525b;
 }
+<<<<<<< HEAD
+=======
+.dropdown-menu > li > a:hover{
+    background-color: #4b525b;
+}
+>>>>>>> parent of 02f3fbc... The size of the tablet series is not adjusted, only for mobile phone users and computer users to watch, use google to browse the page.
 /*nav bar end*/
 
 /*news marquee跑馬燈*/
@@ -62,10 +69,11 @@ body {
 .marQuee{
     overflow:hidden;
     width:100%;
-    background-image: url("https://static.pexels.com/photos/1946/purple-abstract-haze-blur.jpg");
+    background-color:pink;
 }
 .doc-one{
     display:inline-block;
+    border:1px solid;
     width:100%;
 }
 
@@ -79,74 +87,18 @@ body {
 /*slider end*/
 
 /*section 內文文章介紹*/
-#section1 {padding-top:0;min-height:100vh;color: #000; background-color: #fff;}
-.parallax-one {
-    /* The image used */
-    background-image: url("https://static.pexels.com/photos/1946/purple-abstract-haze-blur.jpg");
-    /* Set a specific height */
-    min-height: 500px;
+#section1 {padding-top:0;min-height:100vh;color: #fff; background-color: #ff0019;}
+#section2 {padding-top:0;min-height:100vh;color: #fff; background-color: #ffa00f;}
+#section3 {padding-top:0;min-height:100vh;color: #fff; background-color: #feff12;}
+#section31 {padding-top:0;min-height:100vh;color: #fff; background-color: #32ff0a;}
+#section32 {padding-top:0;min-height:100vh;color: #fff; background-color: #1cdaff;}
+#section33 {padding-top:0;min-height:100vh;color: #fff; background-color: #2b39ff;}
+#section4 {padding-top:0;min-height:100vh;color: #fff; background-color: #f223ff;}
+#section5 {padding-top:0;min-height:100vh;color: #fff; background-color: #814f15;}
+footer {padding-top:10px;min-height:100vh;color: #fff; background-color: #376b6e;}
 
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-#section2 {padding-top:0;min-height:100vh;color: #fff; background-color: #000;}
-#section3 {padding-top:0;min-height:100vh;color: #000; background-color: #fff;}
-.parallax-three {
-    /* The image used */
-    background-image: url("https://static.pexels.com/photos/1946/purple-abstract-haze-blur.jpg");
-    /* Set a specific height */
-    min-height: 500px;
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-#section31 {padding-top:0;min-height:100vh;color: #fff; background-color: #000;}
-#section32 {padding-top:0;min-height:100vh;color: #000; background-color: #fff;}
-.parallax-Thirty-two {
-    /* The image used */
-    background-image: url("https://static.pexels.com/photos/1946/purple-abstract-haze-blur.jpg");
-    /* Set a specific height */
-    min-height: 500px;
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-#section33 {padding-top:0;min-height:100vh;color: #fff; background-color: #000;}
-#section4 {padding-top:0;min-height:100vh;color: #000; background-color: #fff;}
-.parallax-four {
-    /* The image used */
-    background-image: url("https://static.pexels.com/photos/1946/purple-abstract-haze-blur.jpg");
-    /* Set a specific height */
-    min-height: 500px;
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-#section5 {padding-top:0;min-height:100vh;color: #fff; background-color: #000;}
-footer {padding-top:10px;min-height:100vh;color: #000; background-color: #fff;}
-.parallax-footer {
-    /* The image used */
-    background-image: url("https://static.pexels.com/photos/1946/purple-abstract-haze-blur.jpg");
-    /* Set a specific height */
-    min-height: 500px;
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.section-row{
+    margin: 0;
 }
 
 /*row-section1*/
@@ -158,19 +110,23 @@ footer {padding-top:10px;min-height:100vh;color: #000; background-color: #fff;}
     height: 80px;
 }
 .section-button{
-    width:40%;
+    width:15%;
     background-color: #8a0151;
     font-size: 16px;
+    padding: 8px;
+    color: #fff;
 }
 .section-button:hover{
     background-color: #94326b;
+    color: #fff;
 }
 .item-section1_two>.images_shop>img{
     width:100px;
 }
+
 /*row-section2*/
-#section2 .caption p{
-    color: #000;
+.section2-news{
+    margin: 0;
 }
 /*row-section3*/
 .item-img{
@@ -186,7 +142,7 @@ footer {padding-top:10px;min-height:100vh;color: #000; background-color: #fff;}
     z-index:2;
     margin-top:-250px;
     font-size: 60px;
-    color: #1d2219;
+    color: #91848e;
     text-align: right;
 }
 /*row-section3-1(31)*/
@@ -199,32 +155,42 @@ footer {padding-top:10px;min-height:100vh;color: #000; background-color: #fff;}
 }
 .item-txt-pdt{
     text-align: left;
-    color: #1d2219;
+    color: #91848e;
     font-size: 20px;
 }
-.item-txt-pdt p {
-    color: #000;
-}
-.item-txt-pdt b{
-    color: #000;
-}
 /*row-section3-3(33)*/
+#section33 .text-name h4{
+
+}
+
 /*row-section4*/
 
 /*第一層 訂購訊息vs訂單下載 #2*/
+<<<<<<< HEAD
+=======
+.section4-container-fluid{
+    padding-top: 50px;
+}
+>>>>>>> parent of 02f3fbc... The size of the tablet series is not adjusted, only for mobile phone users and computer users to watch, use google to browse the page.
 @media screen and (max-width: 25em) {
     .np-icon span {
         display: none;
     }
 }
 .grid {
+     /*padding: 20px 20px 100px 20px;*/
+     /*max-width: 1200px;*/
      margin: 0 auto;
      list-style: none;
      text-align: center;
  }
 .grid li {
     display: inline-block;
+<<<<<<< HEAD
     width: 400px;
+=======
+    width: 440px;
+>>>>>>> parent of 02f3fbc... The size of the tablet series is not adjusted, only for mobile phone users and computer users to watch, use google to browse the page.
     margin: 0;
     text-align: left;
     position: relative;
@@ -242,10 +208,10 @@ footer {padding-top:10px;min-height:100vh;color: #000; background-color: #fff;}
 /* 第二層 hover隱藏 */
 .grid figcaption {
     position: absolute;
-    /*top: 0;*/
-    /*left: 0;*/
-    padding: 9px;
-    background: #ffd7c6;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    background: rebeccapurple;
     color: #ed4e6e;
 }
 .grid figcaption h3 {
@@ -258,11 +224,10 @@ footer {padding-top:10px;min-height:100vh;color: #000; background-color: #fff;}
 .grid figcaption a {
     text-align: center;
     padding: 5px 10px;
-    /*border-radius: 2px;*/
-    /*display: inline-block;*/
-    /*background: #31a7c4;*/
+    border-radius: 2px;
+    display: inline-block;
+    background: #31a7c4;
     color: #fff;
-    background-color: #94326b;
 }
 
 /* Caption animation */
@@ -322,7 +287,6 @@ footer {padding-top:10px;min-height:100vh;color: #000; background-color: #fff;}
     -moz-transition: -moz-transform 0.4s, opacity 0.1s;
     transition: transform 0.4s, opacity 0.1s;
 }
-/*訂購訊息(訂單)button*/
 .ca-style figcaption a {
     position: absolute;
     bottom: 20px;
@@ -353,42 +317,16 @@ footer {padding-top:10px;min-height:100vh;color: #000; background-color: #fff;}
 }
 
 /*row-section5*/
-.pandm{
-    padding: 0;
-    margin: 0;
-}
 .row-cakeShop{
     background-image: url(../images/index/cakeShop.png);
     width: 100%;
     min-height: 660px;
 }
 /*<div class="col-xs-12 col-md-4">*/
-.btn-form{
-    padding: 0.8% 0 0 0;
-}
-.btn-sub{
-    width:93%;
-    background-color: #8a0151;
-    font-size: 16px;
-    color: #fff;
-}
-.btn-sub:hover{
-    background-color: #94326b;
-    color: #fff;
-}
 /*<div class="col-xs-12 col-md-8">*/
 .required:after {
     content: " *必填欄位";
     color: red;
-}
-.bottom-margin{
-    text-align: center;
-}
-.bottom-margin-clear{
-
- }
-.bottom-margin-send{
-
 }
 /*section footer end 內文文章介紹*/
 
@@ -400,7 +338,7 @@ footer {padding-top:10px;min-height:100vh;color: #000; background-color: #fff;}
     transition: 400ms;
     top: 37%;  /*設置垂直位置*/
     z-index: 100;
-    background-color: #8a0151;
+    background-color: #ffc9d3;
     border-radius: 15px 0 0 15px;
 }
 .blk:hover{  /*當滑鼠移至此區塊時，伸縮區塊*/
@@ -415,7 +353,7 @@ footer {padding-top:10px;min-height:100vh;color: #000; background-color: #fff;}
 }
 /*floating menu right*/
 .nomargin{
-    background-color: #8a0151;
+    background-color: #ffc9d3;
     width: 20%;
     border-radius: 15px 0 0 15px;
 }

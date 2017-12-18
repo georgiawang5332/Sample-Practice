@@ -4,7 +4,11 @@
     list-style: none;
     text-decoration: none;
     box-sizing: border-box;
+    color: #fff;
     /*outline: 1px solid #BB0000;*/
+}
+h2{
+    color: #fff;
 }
 /*訂購訊息vs訂單下載 #1*/
 *, *:after, *:before {
@@ -15,21 +19,19 @@
 body {
     position: relative;
 }
-.wrapper{
-    /*background-color: #000;*/
-}
-
 /*nav bar*/
 .navbar{
     margin-bottom:0;
+    background-color: #8a0151;
+    border-radius: 0;
 }
 .affix{
     top: 0;
     width: 100%;
     -webkit-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
-    background-color: #F44336;
-    border-color: #F44336;
+    background-color: #8a0151;
+    border-color: #8a0151;
     z-index: 99;
 }
 .affix a {
@@ -44,22 +46,13 @@ body {
 .container-fluid{
     padding: 0;
 }
-<<<<<<< HEAD
 /*navbar 與跑馬燈的之間高*/
-=======
->>>>>>> parent of 02f3fbc... The size of the tablet series is not adjusted, only for mobile phone users and computer users to watch, use google to browse the page.
 .affix + .container-fluid {
     padding-top: 50px;
 }
 .dropdown-menu > li > a:hover{
     background-color: #4b525b;
 }
-<<<<<<< HEAD
-=======
-.dropdown-menu > li > a:hover{
-    background-color: #4b525b;
-}
->>>>>>> parent of 02f3fbc... The size of the tablet series is not adjusted, only for mobile phone users and computer users to watch, use google to browse the page.
 /*nav bar end*/
 
 /*news marquee跑馬燈*/
@@ -69,11 +62,10 @@ body {
 .marQuee{
     overflow:hidden;
     width:100%;
-    background-color:pink;
+    background-image: url("https://static.pexels.com/photos/1946/purple-abstract-haze-blur.jpg");
 }
 .doc-one{
     display:inline-block;
-    border:1px solid;
     width:100%;
 }
 
@@ -87,18 +79,78 @@ body {
 /*slider end*/
 
 /*section 內文文章介紹*/
-#section1 {padding-top:0;min-height:100vh;color: #fff; background-color: #ff0019;}
-#section2 {padding-top:0;min-height:100vh;color: #fff; background-color: #ffa00f;}
-#section3 {padding-top:0;min-height:100vh;color: #fff; background-color: #feff12;}
-#section31 {padding-top:0;min-height:100vh;color: #fff; background-color: #32ff0a;}
-#section32 {padding-top:0;min-height:100vh;color: #fff; background-color: #1cdaff;}
-#section33 {padding-top:0;min-height:100vh;color: #fff; background-color: #2b39ff;}
-#section4 {padding-top:0;min-height:100vh;color: #fff; background-color: #f223ff;}
-#section5 {padding-top:0;min-height:100vh;color: #fff; background-color: #814f15;}
-footer {padding-top:10px;min-height:100vh;color: #fff; background-color: #376b6e;}
+#section1 {padding-top:0;min-height:100vh;color: #000; background-color: #fff;}
+.parallax-one {
+    /* The image used */
+    background-image: url("https://static.pexels.com/photos/1946/purple-abstract-haze-blur.jpg");
+    /* Set a specific height */
+    min-height: 500px;
 
-.section-row{
-    margin: 0;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#section2 {padding-top:0;min-height:100vh;color: #fff; background-color: #000;}
+#section3 {padding-top:0;min-height:100vh;color: #000; background-color: #fff;}
+.parallax-three {
+    /* The image used */
+    background-image: url("https://static.pexels.com/photos/1946/purple-abstract-haze-blur.jpg");
+    /* Set a specific height */
+    min-height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#section31 {padding-top:0;min-height:100vh;color: #fff; background-color: #000;}
+#section32 {padding-top:0;min-height:100vh;color: #000; background-color: #fff;}
+.parallax-Thirty-two {
+    /* The image used */
+    background-image: url("https://static.pexels.com/photos/1946/purple-abstract-haze-blur.jpg");
+    /* Set a specific height */
+    min-height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#section33 {padding-top:0;min-height:100vh;color: #fff; background-color: #000;}
+#section4 {padding-top:0;min-height:100vh;color: #000; background-color: #fff;}
+.parallax-four {
+    /* The image used */
+    background-image: url("https://static.pexels.com/photos/1946/purple-abstract-haze-blur.jpg");
+    /* Set a specific height */
+    min-height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.thumbnail{
+    margin-bottom:0;
+    padding: 0;
+}
+#section5 {padding-top:0;min-height:100vh;color: #fff; background-color: #000;}
+footer {padding-top:10px;min-height:100vh;color: #000; background-color: #fff;}
+.parallax-footer {
+    /* The image used */
+    background-image: url("https://static.pexels.com/photos/1946/purple-abstract-haze-blur.jpg");
+    /* Set a specific height */
+    min-height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /*row-section1*/
@@ -110,23 +162,19 @@ footer {padding-top:10px;min-height:100vh;color: #fff; background-color: #376b6e
     height: 80px;
 }
 .section-button{
-    width:15%;
+    width:40%;
     background-color: #8a0151;
     font-size: 16px;
-    padding: 8px;
-    color: #fff;
 }
 .section-button:hover{
     background-color: #94326b;
-    color: #fff;
 }
 .item-section1_two>.images_shop>img{
     width:100px;
 }
-
 /*row-section2*/
-.section2-news{
-    margin: 0;
+#section2 .caption p{
+    color: #000;
 }
 /*row-section3*/
 .item-img{
@@ -142,7 +190,7 @@ footer {padding-top:10px;min-height:100vh;color: #fff; background-color: #376b6e
     z-index:2;
     margin-top:-250px;
     font-size: 60px;
-    color: #91848e;
+    color: #1d2219;
     text-align: right;
 }
 /*row-section3-1(31)*/
@@ -155,79 +203,74 @@ footer {padding-top:10px;min-height:100vh;color: #fff; background-color: #376b6e
 }
 .item-txt-pdt{
     text-align: left;
-    color: #91848e;
+    color: #1d2219;
     font-size: 20px;
 }
-/*row-section3-3(33)*/
-#section33 .text-name h4{
-
+.item-txt-pdt p {
+    color: #000;
 }
-
+.item-txt-pdt b{
+    color: #000;
+}
+/*row-section3-3(33)*/
 /*row-section4*/
 
 /*第一層 訂購訊息vs訂單下載 #2*/
-<<<<<<< HEAD
-=======
-.section4-container-fluid{
-    padding-top: 50px;
-}
->>>>>>> parent of 02f3fbc... The size of the tablet series is not adjusted, only for mobile phone users and computer users to watch, use google to browse the page.
 @media screen and (max-width: 25em) {
     .np-icon span {
         display: none;
     }
 }
 .grid {
-     /*padding: 20px 20px 100px 20px;*/
-     /*max-width: 1200px;*/
-     margin: 0 auto;
+     /*padding: 10px 10px 50px 10px;*/
+     max-width: 100%;
+     /*margin: 0 auto;*/
      list-style: none;
      text-align: center;
  }
 .grid li {
     display: inline-block;
-<<<<<<< HEAD
-    width: 400px;
-=======
     width: 440px;
->>>>>>> parent of 02f3fbc... The size of the tablet series is not adjusted, only for mobile phone users and computer users to watch, use google to browse the page.
     margin: 0;
+    /*padding: 10px;*/
     text-align: left;
     position: relative;
 }
 .grid figure {
-    position: relative;
+    width: 100%;
+    height: 195px;
+    /*margin: 0;*/
+    /*position: relative;*/
 }
 .grid figure > div {
-    width: 100%;
-    height: 100%;
     display: inline-block;
     position: relative;
 }
-
-/* 第二層 hover隱藏 */
+/* 第二隱藏版子 */
 .grid figcaption {
     position: absolute;
     top: 0;
     left: 0;
-    padding: 20px;
-    background: rebeccapurple;
+    padding: 0;
+    margin: 0;
+    background: #888;
     color: #ed4e6e;
 }
 .grid figcaption h3 {
+    /*width: 100%;*/
     margin: 0;
     padding: 0;
-    color: #fff;
+    color: #373cff;
 }
-
 /* take me there btn */
 .grid figcaption a {
     text-align: center;
-    padding: 5px 10px;
+    padding: 0px 2px;
     border-radius: 2px;
     display: inline-block;
     background: #31a7c4;
     color: #fff;
+
 }
 
 /* Caption animation */
@@ -239,20 +282,25 @@ footer {padding-top:10px;min-height:100vh;color: #fff; background-color: #376b6e
     -moz-perspective-origin: 0 0%;
     perspective-origin: 0 0%;
 }
+
 .ca-style figure {
     -webkit-transform-style: preserve-3d;
     -moz-transform-style: preserve-3d;
     transform-style: preserve-3d;
 }
+
 .ca-style figure > div {
     overflow: hidden;
 }
+
 .ca-style figure img {
     -webkit-transition: -webkit-transform 0.3s ease-out;
     -moz-transition: -moz-transform 0.3s ease-out;
     transition: transform 0.3s ease-out;
 }
-.ca-style figure:hover img {
+
+.ca-style figure:hover img
+{
     -webkit-transform: translateX(25%);
     -moz-transform: translateX(25%);
     -ms-transform: translateX(25%);
@@ -260,10 +308,9 @@ footer {padding-top:10px;min-height:100vh;color: #fff; background-color: #376b6e
     cursor: pointer;
 }
 
-/* take me there btn */
 .ca-style figcaption {
+    height: 100%;
     width: 100%;
-    height: 210px;
     opacity: 0;
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
@@ -278,8 +325,9 @@ footer {padding-top:10px;min-height:100vh;color: #fff; background-color: #376b6e
     -moz-transition: -moz-transform 0.4s, opacity 0.1s 0.3s;
     transition: transform 0.4s, opacity 0.1s 0.3s;
 }
+
 .ca-style figure:hover figcaption{
-    /*opacity: 1;*/
+    opacity: 1;
     -webkit-transform: rotateY(0deg);
     -moz-transform: rotateY(0deg);
     transform: rotateY(0deg);
@@ -287,28 +335,31 @@ footer {padding-top:10px;min-height:100vh;color: #fff; background-color: #376b6e
     -moz-transition: -moz-transform 0.4s, opacity 0.1s;
     transition: transform 0.4s, opacity 0.1s;
 }
+
 .ca-style figcaption a {
     position: absolute;
     bottom: 20px;
     right: 20px;
 }
+
 .btn_hover:hover {
-    background-color: #94326b;
+    background: #3fc7e8;
     -webkit-transition: all 0.2s ease-in;
     -moz-transition: all 0.2s ease-in;
     -o-transition: all 0.2s ease-in;
 }
 
 /* make responsive */
-@media only screen and (max-width: 31.5em) {
+@media screen and (max-width: 31.5em) {
     .grid {
         padding: 10px 10px 50px 10px;
     }
     .grid li {
         width: 100%;
-        min-width: 300px;
+        /*min-width: 300px;*/
     }
 }
+
 
 /*第三 隱私權聲明 文字設計*/
 .privacy-statement{
@@ -317,16 +368,36 @@ footer {padding-top:10px;min-height:100vh;color: #fff; background-color: #376b6e
 }
 
 /*row-section5*/
+.pandm{
+    padding: 0;
+    margin: 0;
+}
 .row-cakeShop{
     background-image: url(../images/index/cakeShop.png);
     width: 100%;
     min-height: 660px;
 }
 /*<div class="col-xs-12 col-md-4">*/
+.btn-form{
+    padding: 0.8% 0 0 0;
+}
+.btn-sub{
+    width:93%;
+    background-color: #8a0151;
+    font-size: 16px;
+    color: #fff;
+}
+.btn-sub:hover{
+    background-color: #94326b;
+    color: #fff;
+}
 /*<div class="col-xs-12 col-md-8">*/
 .required:after {
     content: " *必填欄位";
     color: red;
+}
+.bottom-margin{
+    text-align: center;
 }
 /*section footer end 內文文章介紹*/
 
@@ -338,7 +409,7 @@ footer {padding-top:10px;min-height:100vh;color: #fff; background-color: #376b6e
     transition: 400ms;
     top: 37%;  /*設置垂直位置*/
     z-index: 100;
-    background-color: #ffc9d3;
+    background-color: #8a0151;
     border-radius: 15px 0 0 15px;
 }
 .blk:hover{  /*當滑鼠移至此區塊時，伸縮區塊*/
@@ -353,7 +424,36 @@ footer {padding-top:10px;min-height:100vh;color: #fff; background-color: #376b6e
 }
 /*floating menu right*/
 .nomargin{
-    background-color: #ffc9d3;
+    background-color: #8a0151;
     width: 20%;
     border-radius: 15px 0 0 15px;
+}
+/*loading*/
+#loading {
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: #964133;
+    background-repeat: no-repeat;
+    background-position: 50% 4%;
+    z-index: 999999;
+}
+
+#loading > div {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+#loading > div > p {
+    color: #fff;
+    text-align: center;
+    text-shadow: rgba(247, 143, 14, 0.75) 2px 2px 5px;
+    font-weight: bold;
+    font-family: "Century Gothic";
+    font-style: italic;
+    font-size: 22px;
 }

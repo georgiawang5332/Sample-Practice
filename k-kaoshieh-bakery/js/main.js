@@ -1,3 +1,4 @@
+"use strict";
 <!--擋Hinet廣告用-->
 //先用Open物件來替代window.open()
 var Open = window.open;
@@ -15,3 +16,14 @@ window.onscroll = function () {
     }
 };
 */
+//loading
+var loaded = 0;
+var loading = function loading() {
+    document.querySelector("body>#loading>div>p").innerHTML = loaded++ + " %";
+    if (loaded < 100) {
+        requestAnimationFrame(loading);
+    } else {
+        document.getElementById("loading").style.display = "none";
+    }
+};
+requestAnimationFrame(loading);
